@@ -1,7 +1,7 @@
 .footer-container {
     display: flex;
     justify-content: space-between;
-    background-image: url(../../../../public/image.png);
+    background-image: url('/assets/background.jpg');
     background-size: cover;
     padding-left: 40px;
     padding-top: 70px;
@@ -34,13 +34,13 @@
         font-size: 14px;
     }
 
-    .footer-email {
+    .footer-link {
         margin-top: 60px;
         font-size: 20px;
     }
 }
 
-.footer-text-container {
+.footer-item {
     flex: 1;
     display: flex;
     flex-direction: column;
