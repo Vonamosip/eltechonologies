@@ -1,0 +1,21 @@
+.footer-container {
+    display: flex;
+    background-color: rgb(15, 15, 107);
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.footer-services {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+span {
+    color: white;
+    font-family: Comfortaa;
+}
+
+.footer-title {
+    font-size: 16px;
+}
