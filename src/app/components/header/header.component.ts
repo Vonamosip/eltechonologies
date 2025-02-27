@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { LogoComponent } from "../logo/logo.component";
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [LogoComponent],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
+  standalone: true
 })
 export class HeaderComponent {
 
