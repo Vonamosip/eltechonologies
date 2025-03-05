@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +11,10 @@ import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'EliteTechnologies';
-  constructor(private iconRegistry: MatIconRegistry) {}
-
-  ngOnInit(): void {
-    this.iconRegistry.addSvgIconLiteral('backIcon', 'assets/icons/back.svg');
-    this.iconRegistry.addSvgIconLiteral('nextIcon', 'assets/icons/next.svg');
+  constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {
+    this.iconRegistry.addSvgIcon('nextIcon', this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/next.svg'));
+    this.iconRegistry.addSvgIcon('backIcon', this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/back.svg'));
   }
 }
