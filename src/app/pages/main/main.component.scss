@@ -1,0 +1,140 @@
+.about__us {
+  padding: 40px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+
+  .service__intro {
+    font-size: 32px;
+    flex: 1;
+    padding-right: 20px;
+    color: rgba(11, 7, 124, 1);
+    width: 513px;
+  }
+
+  .services__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service__box {
+    flex: 1;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    span {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: rgba(11, 7, 124, 1);
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 14px;
+      color: rgba(11, 7, 124, 1);
+    }
+
+    .service__icon {
+      margin: 20px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(12, 8, 119, 1);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: -45px;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/linear.svg') no-repeat center center;
+    background-size: cover;
+    transform: rotate(12.17deg);
+    z-index: -1;
+  }
+}
+
+
+
+
+.domain__container {
+  height: 434px;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #F7F8FC;
+
+  .domain__panel {
+    display: flex;
+    justify-content: space-between;
+
+    .domain__title {
+      font-size: 32px;
+      color: #0B077C;
+    }
+
+    .arrows__container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .card__container {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+
+    .card {
+      flex: 1;
+      border-radius: 20px;
+      border: 1px solid #716363;
+      background-color: #FFFFFF;
+      padding: 50px;
+      box-sizing: border-box;
+      display: flex;
+      gap: 60px;
+
+      .card__title {
+        font-size: 14px;
+        color: #0B077C;
+      }
+
+      .card__text__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: -5px;
+
+        .card__big__text {
+          font-size: 20px;
+          color: #0B077C;
+        }
+
+        .card__little__text {
+          font-size: 14px;
+          color: #0B077CCC;
+        }
+      }
+    }
+  }
+}
