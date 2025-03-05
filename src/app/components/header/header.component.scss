@@ -2,7 +2,8 @@
   width: 100%;
   height: 640px;
   background: url('/assets/background-header.jpg') no-repeat 12% 45%;
-  background-size: 160%;
+  background-size: cover;
+  background-position: center;
   position: relative;
 
   .header__container {
@@ -92,5 +93,82 @@
       font-size: 1.5rem;
       font-weight: 400;
     }
+  }
+}
+
+.burger__menu {
+  display: none;
+}
+
+button {
+  font-family: "Comfortaa", sans-serif !important;
+  color: #FFFFFF !important;
+}
+
+.menu__item {
+  font-family: "Comfortaa", sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 840px) {
+  .header__logo {
+    display: none !important;
+  }
+
+  .header__nav {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .banner__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav__link {
+    font-size: 15px !important;
+  }
+
+  .header__nav {
+    display: none !important;
+  }
+
+  .burger__menu {
+    display: flex;
+    justify-content: right;
+  }
+
+  .header__logo {
+    display: flex !important;
+    flex: 1;
+    margin: 10px !important;
+  }
+
+  .header__container {
+    display: flex !important;
+    justify-content: right !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner__title {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav__link {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .nav__item {
+    margin: 0 !important;
   }
 }
