@@ -10,7 +10,7 @@
     flex: 1;
     padding-right: 20px;
     color: rgba(11, 7, 124, 1);
-    width: 513px;
+    width: fit-content;
   }
 
   .services__info {
@@ -74,9 +74,8 @@
 
 .domain__container {
   height: 434px;
-  padding-top: 60px;
-  padding-left: 40px;
-  padding-right: 40px;
+  height: fit-content;
+  padding: 60px 40px;
   background-color: #F7F8FC;
 
   .domain__panel {
@@ -136,5 +135,68 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1100px) {
+  .card {
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .card__big__text {
+    font-size: 15px !important;
+  }
+
+  .card__little__text {
+    font-size: 10px !important;
+  }
+
+  .about__us::before {
+    transform: rotate(0) !important;
+  }
+}
+
+// @media (max-width: 670px) {
+//   .card__title {
+//     font-size: 10px !important;
+//   }
+// }
+
+@media (max-width: 680px) {
+  .card__container {
+    flex-direction: column !important;
+  }
+
+  .service__text {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .about__us {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    flex-direction: column !important;
+  }
+
+  .service__text {
+    font-size: 15px !important;
+  }
+
+  .service__icon {
+    margin: 10px !important;
+    width: 50px;
+  }
+}
+
+@media (max-width: 340px) {
+  .about__us {
+    padding: 10px !important;
   }
 }
